@@ -21,7 +21,7 @@ A modern web browser (e.g., Chrome, Firefox, Safari)
 Installation
 Clone the repository:
 sh
-git clone https://github.com/your-username/anime-watch-list.git
+git clone https://github.com/your-username/anime-watch-list.git]
 
 Open the index.html file in your web browser to start using the application.
 Usage
