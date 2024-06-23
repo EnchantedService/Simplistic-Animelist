@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Watch List | Track Your Favorite Anime</title>
+    <meta name="description" content="Keep track of your anime watching progress with this easy-to-use Anime Watch List.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Anime Watch List</h1>
+            <p class="tagline">Track your anime journey</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="add-anime">
+            <h2>Add New Anime</h2>
+            <form id="anime-form" autocomplete="off">
+                <div class="form-group">
+                    <label for="anime-title">Anime Title</label>
+                    <input type="text" id="anime-title" placeholder="Enter anime title" required>
+                </div>
+                <div class="form-group">
+                    <label for="anime-status">Watch Status</label>
+                    <select id="anime-status" required>
+                        <option value="">Select status</option>
+                        <option value="Plan to Watch">Plan to Watch</option>
+                        <option value="Watching">Watching</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Add to List
+                </button>
+            </form>
+        </section>
+
+        <section id="anime-list">
+            <h2>Your Anime List</h2>
+            <div id="list-controls">
+                <input type="text" id="search-anime" placeholder="Search anime..." autocomplete="off">
+                <select id="filter-status">
+                    <option value="all">All Status</option>
+                    <option value="Plan to Watch">Plan to Watch</option>
+                    <option value="Watching">Watching</option>
+                    <option value="Completed">Completed</option>
+                </select>
+            </div>
+            <ul id="anime-items"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Anime Watch List | Designed with <i class="fas fa-heart"></i> by Anime Enthusiasts</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
